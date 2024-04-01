@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+#screen-card {
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 400px;
+    overflow: scroll;
+    box-shadow: 2px 2px 2px 5px rgba(150, 150, 150, 0.349);
+}
+
+.word {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(190, 189, 189, 0.89);
+}
+
+.letter {
+    font-size: 1.6rem;
+    margin: 1px;
+    line-height: 1.5;
+    display: inline-block;
+    margin: 5px 3px 5px 0;
+    font-weight: bold;
+    color: rgb(131, 130, 130);
+    text-align: center;
+    font-family: pt-mono, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#game-title {
+    height: 20vh;
+    width: 100vw;
+    background-color: #ffa500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tela-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    flex-direction: column;
+}
+
+.botao-iniciar {
+    border: none;
+    background-color: #ffa500;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 1px rgba(63, 63, 63, 0.479);
+    cursor: pointer;
+    color: #fff;
+    margin-top: 15px;
+}
+
+#time-choice {
+    box-shadow: 2px 2px 7px 1px rgba(63, 63, 63, 0.479);
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+#botao-iniciar:hover {
+    background-color: #ffb730;
+}
+
+.time-counter {
+    display: none;
+    background-color: #ffb730;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#time {
+    color: #fff;
+    font-size: 50px;
+}
+
+#end-game {
+    color: #fff;
+    background-color: orange;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px;
+
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+}
+
+#end-game p {
+    font-size: 25px;
+    margin: 5px;
+}
